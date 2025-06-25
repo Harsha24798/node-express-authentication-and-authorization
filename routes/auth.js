@@ -10,4 +10,8 @@ router.get('/admin-only', protect, authorize('admin'), (req, res) => res.json({ 
 router.get('/protected', protect, (req, res) => res.json({ message: 'Welcome user!' }))
 router.get('/non-protected', (req, res) => res.json({ message: 'Welcome user!' }))
 
+router.get('/dashboard',  protect, authorize('user', 'admin'), (req, res) => res.json({ message: 'Welcome user or admin!' })
+)
+
+
 export default router;
