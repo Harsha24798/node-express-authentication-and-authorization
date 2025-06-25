@@ -1,0 +1,47 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment variables
+.env
+.env.* 
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Debug files
+*.pid
+*.seed
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Build folders
+dist/
+build/
+
+# Coverage reports
+coverage/
+
+# Binaries
+*.exe
+*.dll
+*.out
+*.app
+
+# PM2 logs (if using PM2)
+pids
+*.pid
+*.log
